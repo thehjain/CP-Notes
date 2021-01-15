@@ -2,4 +2,5 @@
 Important Problems for Competitive Programming
 
 ⩥Linear Search
-  1.
+    1.Simple Search (SimpleSearch)
+
