@@ -41,9 +41,7 @@ class CSUMQ {
 			if (l == 0) {
 				System.out.println(arr[r]);
 				continue;
-			}
-
-			else {
+			} else {
 				System.out.println(arr[r] - arr[l - 1]);
 			}
 
