@@ -34,8 +34,9 @@ class Mannas {
 						} else if (index == 5) {
 							count2++;
 							count1--;
-							break;
 						}
+					} else {
+						break;
 					}
 				}
 			}
