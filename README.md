@@ -24,4 +24,13 @@ Important Problems for Competitive Programming
     
     4.Or In Matrix
     
+    
+⩥Prefix Sum
+
+    1.Cumulative Sum Query (CSUMQ)
+    
+    2.Man With No Name (BLONDIE)
+    
+    3.Digit Prime (DigitPrime)
+
 
