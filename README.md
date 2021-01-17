@@ -16,6 +16,12 @@ Important Problems for Competitive Programming
     
 ⩥Hashing 
 
-    1.
+    1.Maximum Occurence (MaximumOccurence)
+    
+    2.Registration System
+    
+    3.Perfect Pair 
+    
+    4.Or In Matrix
     
 
