@@ -10,10 +10,12 @@ class DigitPrimes {
 	static FastScanner sc = new FastScanner();
 
 	static boolean[] prime = new boolean[1000001];
+	static int[] prefix = new int[1000001];
 
 	public static void main(String[] args) throws IOException {
 		int T = sc.nextInt();
 		fillPrime();
+		fillPre();
 		while (T-- > 0) {
 			solve();
 		}
@@ -23,13 +25,7 @@ class DigitPrimes {
 
 		int l = sc.nextInt();
 		int r = sc.nextInt();
-		int count = 0;
-		for (int i = l; i <= r; i++) {
-
-			int sum = digitSum(i);
-			if (prime[sum] && prime[i]) count++;
-		}
-		System.out.println(count);
+		System.out.println(prefix[r] - prefix[l]);
 	}
 
 	static int digitSum(int i) {
@@ -39,6 +35,16 @@ class DigitPrimes {
 			i /= 10;
 		}
 		return sum;
+	}
+
+	static void fillPre() {
+		int count = 0;
+		for (int i = 1; i < 1000001; i++) {
+			if (prime[i] && prime[digitSum(i)])
+				count++;
+			prefix[i] = count;
+		}
+
 	}
 
 	static void fillPrime() {
