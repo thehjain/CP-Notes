@@ -8,12 +8,14 @@ class MXPOWER {
 	private static int MIN = Integer.MIN_VALUE;
 	private static int MOD = 1000000007;
 	static FastScanner sc = new FastScanner();
+	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) throws IOException {
 		int T = sc.nextInt();
 		while (T-- > 0) {
 			solve();
 		}
+		System.out.println(sb);
 	}
 
 	static void solve() throws IOException {
@@ -54,7 +56,7 @@ class MXPOWER {
 
 			}
 		}
-		System.out.println(res);
+		sb.append(res + "\n");
 	}
 
 	static class FastScanner {
