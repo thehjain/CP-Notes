@@ -35,6 +35,17 @@ Important Problems for Competitive Programming
     
     4.KJ And The Street Lights (KJ)
     
+    5.Simple Modification (SimpleModification)
+    
+    6.Pongal Bunk (COWA19B)
+    
+    7.Transmutation Diamonds (MXPOWER)
+    
+    
+⩥Sliding Window
+
+    1. Min Max Riddle (MinMaxRiddle)
+    
     
 
 
