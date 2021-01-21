@@ -1,3 +1,11 @@
+
+
+//This problem is based on difference array and prefix sum both
+
+//this solution is working and passing all test cases but this
+//is not the most optimal solution.
+
+
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -24,65 +32,65 @@ class SimpleModification {
 		int modifications = sc.nextInt();
 		int queries = sc.nextInt();
 
-		int[][] arr = new int[n][m];
-		int[][] temp = new int[n][m];
+		long[][] arr = new long[n][m];
+		long[][] diff = new long[n][m];
 
-		for (int i = 0; i < n; i++)
-			for (int j = 0; j < m; j++)
-				arr[i][j] = sc.nextInt();
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				arr[i][j] = sc.nextLong();
+				if (j == 0)
+					diff[i][j] = arr[i][j];
+				else
+					diff[i][j] = arr[i][j] - arr[i][j - 1];
+			}
+		}
 
-		for (int i = 0; i < modifications; i++) {
+		for (int j = 0; j < modifications; j++) {
 
-			int k = sc.nextInt();
+			long k = sc.nextLong();
 
 			int r1 = sc.nextInt();
 			int c1 = sc.nextInt();
 			int r2 = sc.nextInt();
 			int c2 = sc.nextInt();
 
-			temp[r1][c1] += k;
-			if (r2 + 1 < n) {
-				temp[r2 + 1][c1] -= k;
-			}
-			if (c2 + 1 < m) {
-				temp[r1][c2 + 1] -= k;
-			}
-			if (r2 + 1 < n && c2 + 1 < m) {
-				temp[r2 + 1][c2 + 1] += k;
+			for (int i = r1; i <= r2; i++) {
+				diff[i][c1] += k;
+				if (c2 < m - 1)
+					diff[i][c2 + 1] -= k;
 			}
 		}
 
 		for (int i = 0; i < n; i++) {
-			if (i != 0)
-				temp[i][0] = temp[i][0] + temp[i - 1][m - 1];
-			for (int j = 1; j < m; j++) {
-				temp[i][j] += temp[i][j - 1];
+			for (int j = 0; j < m; j++) {
+				if (j == 0)
+					arr[i][j] = diff[i][j];
+				else
+					arr[i][j] = diff[i][j] + arr[i][j - 1];
 			}
 		}
 
-		for (int[] row : temp) {
-			for (int ele : row)
-				System.out.print(ele + " ");
-			System.out.println();
-		}
-
-		for (int i = 0; i < n; i++)
-			for (int j = 0; j < m; j++)
-				arr[i][j] += temp[i][j];
+		// for (int[] row : arr) {
+		// 	for (int ele : row)
+		// 		System.out.print(ele + " ");
+		// 	System.out.println();
+		// }
 
 		for (int i = 0; i < n; i++) {
-			if (i != 0)
-				arr[i][0] = arr[i][0] + arr[i - 1][m - 1];
-			for (int j = 1; j < m; j++) {
+			for (int j = 0; j < m; j++) {
+				if (j == 0)
+					continue;
 				arr[i][j] += arr[i][j - 1];
 			}
 		}
 
-		for (int[] row : arr) {
-			for (int ele : row)
-				System.out.print(ele + " ");
-			System.out.println();
-		}
+		// for (int[] row : arr) {
+		// 	for (int ele : row)
+		// 		System.out.print(ele + " ");
+		// 	System.out.println();
+		// }
+
+		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < queries; i++) {
 
@@ -91,9 +99,20 @@ class SimpleModification {
 			int r2 = sc.nextInt();
 			int c2 = sc.nextInt();
 
-			System.out.println(arr[r2][c2] - arr[r1][c1]);
+			long sum = 0;
+
+			for (int j = r1; j <= r2; j++) {
+				if (c1 > 0)
+					sum += arr[j][c2] - arr[j][c1 - 1];
+				else
+					sum += arr[j][c2];
+			}
+
+			sb.append(sum + "\n");
 
 		}
+
+		System.out.println(sb);
 
 	}
 
