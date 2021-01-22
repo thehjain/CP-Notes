@@ -8,18 +8,47 @@ class SHIVIGOD {
 	private static int MIN = Integer.MIN_VALUE;
 	private static int MOD = 1000000007;
 	static FastScanner sc = new FastScanner();
+	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) throws IOException {
 		int T = sc.nextInt();
 		while (T-- > 0) {
 			solve();
 		}
+		System.out.println(sb);
 	}
 
 	static void solve() throws IOException {
 
-		System.out.println("hello");
+		int n = sc.nextInt();
+		int b = sc.nextInt();
+		int a = sc.nextInt();
 
+		double[] arr = new double[n];
+
+		for (int i = 0; i < n; i++)
+			arr[i] = sc.nextDouble();
+
+		double avg = 0;
+		double curr = 0;
+
+		for (int len = a; len <= b; len++) {
+
+			curr = 0;
+			for (int i = 0; i < len; i++)
+				curr += arr[i];
+
+			avg = Math.max(avg, curr / len);
+
+			for (int i = len; i < n; i++) {
+				curr += arr[i];
+				curr -= arr[i - len];
+
+				avg = Math.max(avg, curr / len);
+			}
+		}
+
+		sb.append(String.format("%.06f", avg) + "\n");
 	}
 
 	static class FastScanner {
