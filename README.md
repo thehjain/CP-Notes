@@ -46,6 +46,19 @@ Important Problems for Competitive Programming
 
     1. Min Max Riddle (MinMaxRiddle)
     
+    2. Fence (Fence)
+    
+    3.Shivgawdz (SHIVIGOD)
+    
+    4.Birthday Gift Again (BDGFT)
+    
+    5.Greedy DD (ECAPR206)
+    
+    6.Nastya And Door (NastyaAndDoor)
+    
+    7.Summary Power (SUMPOWER)
+    
+    
     
 
 
