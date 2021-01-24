@@ -30,6 +30,7 @@ class AGGRCOW {
 
 		Arrays.sort(arr);
 
+
 		int count = 1, res = 0, high = arr[n - 1], low = arr[0];
 
 		while (low <= high) {
