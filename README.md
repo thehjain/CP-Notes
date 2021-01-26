@@ -60,6 +60,7 @@ Important Problems for Competitive Programming
     
 
 ⩥Binary Search
+
     1.Bishu And Solders (BishuAndSoldiers)
     
     2.Aggressive Cows (AGGRCOW)
