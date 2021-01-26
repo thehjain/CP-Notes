@@ -58,6 +58,24 @@ Important Problems for Competitive Programming
     
     7.Summary Power (SUMPOWER)
     
+
+⩥Binary Search
+    1.Bishu And Solders (BishuAndSoldiers)
+    
+    2.Aggressive Cows (AGGRCOW)
+    
+    3.Painter's Partition Problem (PaintersPartition)
+    
+    4.Valhalla Siege (ValhallaSiege)
+    
+    5.Destroy The Asteroids (DSTROY)
+    
+    6.Sagheer And Nubian Market (SagheerAndNubianMarket)
+    
+    7.Renting Bikes (RentingBikes)
+    
+    8.Fake Binary Search (FAKEBS)
+    
     
     
 
