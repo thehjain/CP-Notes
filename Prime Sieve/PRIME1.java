@@ -6,6 +6,8 @@
 //for large value of n sieve of erastothenes not work
 //becaue of space so that's where we use segmented sieve
 
+//Watch Coding Ninjas video on segment sieve to understand
+
 
 import java.util.*;
 import java.io.*;
@@ -122,3 +124,7 @@ class PRIME1 {
 	}
 
 }
+
+
+
+//Segmented Sieve
