@@ -14,8 +14,9 @@ class FAKEBS {
 		int T = sc.nextInt();
 		while (T-- > 0) {
 			solve();
-			System.out.print(sb);
+			// System.out.print(sb);
 		}
+		System.out.println(sb);
 	}
 
 	static void solve() throws IOException {
@@ -83,6 +84,7 @@ class FAKEBS {
 				}
 			}
 			sb.append(Math.max(swaps2, swaps1) + "\n");
+			// System.out.println(Math.max(swaps1,swaps2));
 		}
 
 	}
