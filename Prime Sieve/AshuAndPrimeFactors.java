@@ -34,7 +34,7 @@ class AshuAndPrimeFactors {
 		boolean[] isPrime = new boolean[n];
 		Arrays.fill(isPrime, true);
 
-		for (int p = 2; p * p < n; p++) {
+		for (int p = 2; p < n; p++) {
 			if (isPrime[p]) {
 				for (int i = p; i < n; i += p) {
 					if (isPrime[i])
