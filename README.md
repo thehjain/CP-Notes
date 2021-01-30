@@ -77,6 +77,29 @@ Important Problems for Competitive Programming
     
     8.Fake Binary Search (FAKEBS)
     
+     
+⩥Prime Sieve
+
+    1.Prime Generator (PRIME1)
+    
+    2.Printing Some Primes (TDPRIMES)
+    
+    3.Nearest Prime (NearestPrime)
+    
+    4.Ashu And Prime Factors (AshuAndPrimeFactors)
+    
+    5.Sherlock And His Girlfriend (SherlockAndGirlfriend)
+    
+    6.Prime Counting (PrimeCounting)
+    
+    7.Special Numbers (Special Numbers)
+    
+    8.Soldier And Number Game (SoldierAndNumberGame)
+    
+    9.Reducing Fractions (ReducingFractions)
+    
+    
+    
     
     
 
