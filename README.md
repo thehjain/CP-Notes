@@ -99,6 +99,18 @@ Important Problems for Competitive Programming
     9.Reducing Fractions (ReducingFractions)
     
     
+⩥Constructive Problems
+
+    1.Two Arrays And Swaps (TwoArraysAndSwaps)
+    
+    2.Swap Sort (SwapSort)
+    
+    3.Swap Adjacent Elements (SwapAdjacentElements)
+    
+    4.Swap Letters (SwapLetters)
+    
+    5.Swapping to Palindrome (SWAPPALI)
+    
     
     
     
