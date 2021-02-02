@@ -112,6 +112,26 @@ Important Problems for Competitive Programming
     5.Swapping to Palindrome (SWAPPALI)
     
     
+⩥Greedy Algorithms
+
+    1.Even But Not Even
+    
+    2.Neighbor Grid
+    
+    3.Product of Three Numbers (ProductOfThree)
+    
+    4.Just EAt It
+    
+    5.Zero Array
+    
+    6.K-Multiple Free Set
+    
+    7.Jeopardy
+    
+    8.Codeforces Subsequences
+    
+    9.Array Sharpening
+    
     
     
 
