@@ -10,15 +10,38 @@ class CodeFor1 {
 	static FastScanner sc = new FastScanner();
 
 	public static void main(String[] args) throws IOException {
-		int T = sc.nextInt();
-		while (T-- > 0) {
-			solve();
-		}
+		// int T = sc.nextInt();
+		// while (T-- > 0) {
+		solve();
+		// }
 	}
 
 	static void solve() throws IOException {
 
-		System.out.println("ehl");
+		long n = sc.nextLong();
+
+		long l = sc.nextLong();
+		long r = sc.nextLong();
+
+		long count = 0;
+
+		long first = 1;
+
+		while (first * 2 <= n)
+			first <<= 1;
+
+		for (long i = l; i <= r; i++) {
+			long num = first;
+			long iNum = i;
+			while (iNum % 2 == 0) {
+				iNum /= 2;
+				num /= 2;
+			}
+			if ((n & num) > 0)
+				count++;
+		}
+
+		System.out.print(count);
 
 	}
 
