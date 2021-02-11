@@ -133,6 +133,21 @@ Important Problems for Competitive Programming
     9.Array Sharpening
     
     
+⩥Divide And Conquer
+
+    1.Reverse Pairs
+    
+    2.Code For 1
+    
+    3.Meet In The Middle
+    
+    4.Everyone Is Winner
+    
+    5.Good Numbers
+    
+    6.Maximum Sum On Even Positions
+    
+    
     
 
 
