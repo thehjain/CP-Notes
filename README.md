@@ -148,6 +148,23 @@ Important Problems for Competitive Programming
     6.Maximum Sum On Even Positions
     
     
+⩥Stack And Queues
+
+    1.Balanced Brackets
+    
+    2.The Saviours (THESAV)
+    
+    3.Seinfelf (ANARC09A)
+    
+    4.Monk And Power Of Time (MonkAndPower)
+    
+    5.Little Monk And Williamson (CodeMonk)
+    
+    6.Longest Regular Bracket Sequence (LongestRegular Bracket)
+    
+    7.Little Shino And Pairs (LittleShinoAndPairs)
+    
+    8.Seating Arrangement
     
 
 
