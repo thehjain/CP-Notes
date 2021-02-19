@@ -10,15 +10,20 @@ class LuckyCommonSubsequence {
 	static FastScanner sc = new FastScanner();
 
 	public static void main(String[] args) throws IOException {
-		int T = sc.nextInt();
-		while (T-- > 0) {
-			solve();
-		}
+		// int T = sc.nextInt();
+		// while (T-- > 0) {
+		solve();
+		// }
 	}
 
 	static void solve() throws IOException {
 
-		System.out.println("hello");
+		String a = sc.next();
+		String b = sc.next();
+
+		String virus = sc.next();
+
+
 
 	}
 
