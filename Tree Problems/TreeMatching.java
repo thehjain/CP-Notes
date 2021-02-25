@@ -18,7 +18,7 @@ class TreeMatching {
 
 	static void solve() throws IOException {
 
-		System.out.println("hello");
+
 
 	}
 
